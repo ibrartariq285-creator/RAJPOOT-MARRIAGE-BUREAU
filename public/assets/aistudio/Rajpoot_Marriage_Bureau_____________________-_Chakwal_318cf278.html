@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajpoot Marriage Bureau | راجپوت میرج بیورو - Chakwal</title>
+<meta name="description" content="Rajpoot Marriage Bureau, Chakwal. Quality marriage proposals from Pakistan and overseas for every sect, caste and community.">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--gold:#d4af37;--gold-light:#f5d77a;--black:#0b0b0b;--dark:#151515;--text:#eee;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Poppins',sans-serif;background:var(--black);color:var(--text);line-height:1.7}
+  .urdu{font-family:'Noto Nastaliq Urdu',serif;direction:rtl;line-height:2.2}
+  h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
+  a{text-decoration:none;color:inherit}
+  section{padding:80px 8%}
+  .title{text-align:center;margin-bottom:45px}
+  .title h2{font-size:2.2rem}
+  .title p{color:var(--gold-light)}
+  .title::after{content:"";display:block;width:90px;height:3px;background:var(--gold);margin:14px auto 0}
+
+  /* NAVBAR */
+  header{position:fixed;top:0;width:100%;z-index:100;background:rgba(0,0,0,.95);border-bottom:2px solid var(--gold)}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:12px 8%}
+  .logo{font-family:'Cinzel',serif;color:var(--gold);font-size:1.5rem;font-weight:700;border:2px solid var(--gold);padding:2px 12px;border-radius:50px}
+  nav ul{display:flex;list-style:none;gap:26px}
+  nav ul a{font-size:.95rem;transition:.3s}
+  nav ul a:hover{color:var(--gold)}
+  .menu-btn{display:none;font-size:2rem;color:var(--gold);cursor:pointer;background:none;border:none}
+
+  /* HOME */
+  #home{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding-top:110px;
+    background:radial-gradient(circle at center,#2a2208 0%,#0b0b0b 70%)}
+  #home .urdu-title{font-size:3.2rem;color:var(--gold);font-weight:700}
+  #home h1{font-size:2.6rem;letter-spacing:3px;margin:10px 0}
+  .tagline{color:var(--gold-light);letter-spacing:4px;font-size:.9rem;margin-bottom:25px}
+  #home p.lead{max-width:700px;margin-bottom:30px}
+  .btn{display:inline-block;padding:12px 32px;border-radius:50px;font-weight:600;border:2px solid var(--gold);transition:.3s;cursor:pointer;font-family:inherit;font-size:1rem}
+  .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#000}
+  .btn-gold:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(212,175,55,.4)}
+  .btn-outline{color:var(--gold);margin-left:10px;background:transparent}
+  .btn-outline:hover{background:var(--gold);color:#000}
+
+  /* ABOUT */
+  #about{background:var(--dark)}
+  .about-box{max-width:900px;margin:auto;text-align:center;border:1px solid var(--gold);border-radius:20px;padding:40px;background:#0f0f0f}
+  .about-box p{margin-bottom:14px}
+  .values{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+  .values span{border:1px solid var(--gold);color:var(--gold);padding:8px 22px;border-radius:50px;letter-spacing:2px;font-size:.85rem}
+
+  /* SERVICES */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+  .card{background:var(--dark);border:1px solid #3a3118;border-radius:16px;padding:30px 22px;text-align:center;transition:.3s}
+  .card:hover{border-color:var(--gold);transform:translateY(-6px);box-shadow:0 10px 25px rgba(212,175,55,.15)}
+  .card .icon{font-size:2.6rem;margin-bottom:12px}
+  .card h3{font-size:1.15rem;margin-bottom:8px}
+  .card p{font-size:.92rem;color:#ccc}
+
+  /* CONTACT */
+  #contact{background:var(--dark)}
+  .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:35px;max-width:1000px;margin:auto}
+  .info,.form{background:#0f0f0f;border:1px solid var(--gold);border-radius:18px;padding:30px}
+  .info h3{margin-bottom:15px}
+  .info p{margin-bottom:14px}
+  .info .phone{font-size:1.6rem;color:var(--gold-light);font-weight:600}
+  form label{display:block;margin:12px 0 4px;font-size:.9rem;color:var(--gold-light)}
+  form input,form select,form textarea{width:100%;padding:11px 14px;border-radius:10px;border:1px solid #444;background:#1b1b1b;color:#fff;font-family:inherit;font-size:.95rem}
+  form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--gold)}
+  form button{margin-top:18px;width:100%}
+  .note{font-size:.8rem;color:#999;margin-top:10px}
+
+  /* SOCIAL */
+  .social{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:10px}
+  .social a{border:1px solid var(--gold);color:var(--gold);padding:10px 22px;border-radius:50px;transition:.3s;font-size:.9rem}
+  .social a:hover{background:var(--gold);color:#000}
+
+  /* FOOTER */
+  footer{text-align:center;padding:30px 8%;background:#000;border-top:2px solid var(--gold);font-size:.9rem;color:#aaa}
+  footer .social{margin:15px 0}
+
+  /* WHATSAPP FLOATING BUTTON */
+  .whatsapp{position:fixed;bottom:22px;right:22px;z-index:200;background:#25D366;color:#fff;width:62px;height:62px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:2rem;box-shadow:0 6px 20px rgba(0,0,0,.5);animation:pulse 2s infinite}
+  .whatsapp svg{width:34px;height:34px;fill:#fff}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+  /* MOBILE */
+  @media(max-width:850px){
+    .menu-btn{display:block}
+    nav ul{position:absolute;top:100%;left:0;width:100%;background:#000;flex-direction:column;align-items:center;gap:0;max-height:0;overflow:hidden;transition:.4s}
+    nav ul.open{max-height:400px;border-bottom:2px solid var(--gold)}
+    nav ul li{padding:14px 0}
+    .contact-wrap{grid-template-columns:1fr}
+    #home .urdu-title{font-size:2.2rem}
+    #home h1{font-size:1.6rem}
+    .btn-outline{margin:12px 0 0}
+    section{padding:70px 6%}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<header>
+  <nav>
+    <a href="#home" class="logo">RMB</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://wa.me/923425915054" target="_blank" rel="noopener">WhatsApp</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== HOME PAGE ===== -->
+<section id="home">
+  <div class="urdu-title urdu">راجپوت میرج بیورو</div>
+  <h1>RAJPOOT MARRIAGE BUREAU</h1>
+  <div class="tagline">TRUST &nbsp;|&nbsp; RESPECT &nbsp;|&nbsp; SUCCESS</div>
+  <p class="lead urdu">ہمارے پاس پاکستان اور بیرونِ ممالک کے ہر مسلک، ہر ذات، ہر قوم کے معیاری رشتے موجود ہیں۔</p>
+  <p class="lead">Quality marriage proposals from Pakistan and overseas — for every sect, caste and community.</p>
+  <div>
+    <a href="#contact" class="btn btn-gold">Contact Us</a>
+    <a href="https://wa.me/923425915054?text=Assalam%20o%20Alaikum" target="_blank" rel="noopener" class="btn btn-outline">Chat on WhatsApp</a>
+  </div>
+</section>
+
+<!-- ===== ABOUT US ===== -->
+<section id="about">
+  <div class="title">
+    <h2>About Us</h2>
+    <p class="urdu">ہمارے بارے میں</p>
+  </div>
+  <div class="about-box">
+    <p>Rajpoot Marriage Bureau is based in Main Bazar, Chakwal. We help families find suitable, respectable and well-matched life partners for their sons and daughters.</p>
+    <p>We have proposals from Pakistan and from overseas, across every sect, caste and community. Whether you are serious about finding a match or worried about a delayed proposal, we are here to help.</p>
+    <p class="urdu">اگر آپ واقعی رشتہ کرنے میں سنجیدہ ہیں یا رشتے کی وجہ سے پریشان ہیں تو ہم سے رابطہ کریں۔</p>
+    <div class="values"><span>TRUST</span><span>RESPECT</span><span>SUCCESS</span></div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="title">
+    <h2>Our Services</h2>
+    <p class="urdu">ہماری خدمات</p>
+  </div>
+  <div class="grid">
+    <div class="card"><div class="icon">💍</div><h3>Marriage Proposals</h3><p>Suitable rishta proposals for boys and girls, matched to your family's needs.</p></div>
+    <div class="card"><div class="icon">🌍</div><h3>Overseas Proposals</h3><p>Proposals for families in Pakistan and from Pakistanis living abroad.</p></div>
+    <div class="card"><div class="icon">🤝</div><h3>All Sects &amp; Castes</h3><p>Proposals for every maslak, zaat and qaum, with respect for your preferences.</p></div>
+    <div class="card"><div class="icon">📋</div><h3>Biodata Registration</h3><p>Register your biodata with us and we will look for the right match.</p></div>
+    <div class="card"><div class="icon">👨‍👩‍👧</div><h3>Family Meetings</h3><p>We help families connect and arrange meetings in a respectful way.</p></div>
+    <div class="card"><div class="icon">📞</div><h3>Guidance &amp; Support</h3><p>Honest advice and support from first call until the rishta is finalised.</p></div>
+  </div>
+</section>
+
+<!-- ===== CONTACT FORM ===== -->
+<section id="contact">
+  <div class="title">
+    <h2>Contact Us</h2>
+    <p class="urdu">ہم سے رابطہ کریں</p>
+  </div>
+  <div class="contact-wrap">
+    <div class="info">
+      <h3>Get In Touch</h3>
+      <p class="phone">📞 0342-5915054</p>
+      <p>📍 Main Bazar, Main City, Pehlwan Rewri, Chakwal, Pakistan</p>
+      <p class="urdu">چکوال، مین شہر، مین بازار، پھلوان ریوڑی</p>
+      <p><a class="btn btn-gold" href="https://wa.me/923425915054" target="_blank" rel="noopener">WhatsApp Us</a></p>
+      <h3 style="margin-top:20px">Follow Us</h3>
+      <div class="social" style="justify-content:flex-start">
+        <a href="https://facebook.com/YOUR_PAGE" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/YOUR_PAGE" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://tiktok.com/@YOUR_PAGE" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+
+    <div class="form">
+      <h3>Send a Message</h3>
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required placeholder="Your name">
+        <label for="phone">Phone / WhatsApp</label>
+        <input type="tel" id="phone" required placeholder="03XX-XXXXXXX">
+        <label for="type">I am looking for</label>
+        <select id="type">
+          <option>Rishta for Boy</option>
+          <option>Rishta for Girl</option>
+          <option>Overseas Proposal</option>
+          <option>Other</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Write your message..."></textarea>
+        <button type="submit" class="btn btn-gold">Send via WhatsApp</button>
+        <p class="note">Your message opens in WhatsApp, ready to send to our number.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER + SOCIAL MEDIA LINKS ===== -->
+<footer>
+  <h3>Rajpoot Marriage Bureau</h3>
+  <p class="urdu">راجپوت میرج بیورو</p>
+  <div class="social">
+    <a href="https://facebook.com/YOUR_PAGE" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://instagram.com/YOUR_PAGE" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://tiktok.com/@YOUR_PAGE" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://wa.me/923425915054" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p>&copy; <span id="year"></span> Rajpoot Marriage Bureau. All rights reserved.</p>
+</footer>
+
+<!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+<a class="whatsapp" href="https://wa.me/923425915054?text=Assalam%20o%20Alaikum" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.6 1.9 6.5L3 29l7.2-2.1c1.8 1 3.8 1.500 5.800 1.500 7 0 12.700-5.600 12.700-12.500S23 3 16 3zm0 22.800c-1.800 0-3.600-.5-5.100-1.400l-.4-.2-4.300 1.300 1.400-4.100-.3-.4a10 10 0 0 1-1.600-5.400C5.700 10 10.300 5.500 16 5.500S26.300 10 26.300 15.500 21.700 25.800 16 25.800zm5.600-7.600c-.3-.2-1.800-.9-2.100-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.400 8.400 0 0 1-4.200-3.700c-.3-.6.300-.6.900-1.800.1-.2 0-.4 0-.5l-.9-2.200c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100c.2.200 2.100 3.300 5.200 4.600 2 .8 2.800.9 3.800.7.600-.1 1.800-.8 2.100-1.500s.3-1.300.2-1.500-.3-.2-.7-.4z"/></svg>
+</a>
+
+<script>
+  // Mobile menu
+  var menu = document.getElementById('menu');
+  document.getElementById('menuBtn').addEventListener('click', function(){ menu.classList.toggle('open'); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); }); });
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Contact form -> opens WhatsApp with the message filled in
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var text = 'Assalam o Alaikum,%0A' +
+      'Name: ' + encodeURIComponent(document.getElementById('name').value) + '%0A' +
+      'Phone: ' + encodeURIComponent(document.getElementById('phone').value) + '%0A' +
+      'Looking for: ' + encodeURIComponent(document.getElementById('type').value) + '%0A' +
+      'Message: ' + encodeURIComponent(document.getElementById('message').value);
+    window.open('https://wa.me/923425915054?text=' + text, '_blank');
+  });
+</script>
+</body>
+</html>

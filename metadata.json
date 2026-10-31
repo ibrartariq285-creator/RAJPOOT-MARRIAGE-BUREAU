@@ -1,0 +1,6 @@
+{
+  "name": "Rajpoot Marriage Bureau | راجپوت میرج بیورو",
+  "description": "Professional matrimonial matchmaking service based in Chakwal, Pakistan with proposals from Pakistan and overseas, featuring full admin dashboard management, verified profiles, document uploads, and custom packages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
